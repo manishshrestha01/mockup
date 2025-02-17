@@ -3,10 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=https://mockups-design.com/">
-    <title>Redirecting...</title>
+    <title>Redirecting with Animation</title>
+    <style>
+        /* Animation styles */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .loader {
+            border: 16px solid #f3f3f3;
+            border-top: 16px solid #3498db;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .redirect-message {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-    <p>If you are not redirected automatically, <a href="https://mockups-design.com/">click here</a>.</p>
+    <div>
+        <!-- Loading animation -->
+        <div class="loader"></div>
+        <!-- Redirect message -->
+        <p class="redirect-message">Redirecting to mockups-design.com...</p>
+    </div>
+
+    <script>
+        // Redirect after 3 seconds (3000 milliseconds)
+        setTimeout(function() {
+            window.location.href = "https://mockups-design.com/";
+        }, 3000); // Adjust the delay as needed
+    </script>
 </body>
 </html>
