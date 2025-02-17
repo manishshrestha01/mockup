@@ -3,10 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=https://mockups-design.com/">
-    <title>Redirecting...</title>
+    <title>Mockup Design</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p>If you are not redirected automatically, <a href="https://mockups-design.com/">click here</a>.</p>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Mockup Design</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Mockup Design</h2>
+            <p>High-quality mockups for your creative projects.</p>
+            <a href="#gallery" class="btn">Explore Gallery</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Our Features</h2>
+        <div class="feature-list">
+            <div class="feature-item">
+                <h3>High Resolution</h3>
+                <p>Crisp and clear mockups for all your needs.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Free Downloads</h3>
+                <p>Download free mockups for personal and commercial use.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Easy to Use</h3>
+                <p>Simple and intuitive designs for everyone.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="mockup1.jpg" alt="Mockup 1">
+            </div>
+            <div class="gallery-item">
+                <img src="mockup2.jpg" alt="Mockup 2">
+            </div>
+            <div class="gallery-item">
+                <img src="mockup3.jpg" alt="Mockup 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Mockup Design. All rights reserved.</p>
+    </footer>
 </body>
 </html>
